@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Montserrat, sans-serif;
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+::selection {
+  background: #5911dd;
+  color: #fff;
+}
+.wrapper {
+  padding: 10cm;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container that holds form */
+.container {
+  width: 380px; 
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.15);
+}
+.container .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  line-height: 100px;
+  user-select: none;
+  width: 100%;
+  border-radius: 25px;
+  background-color: #333333;
+}
+.container form {
+  padding: 10px 30px 50px 30px;
+}
+.container form .flied {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  position: relative;
+}
+.container form .flied input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.container form .field input:focus,
+form .field input:valid {
+  background-color: #5911dd;
+
+}
+
+.container form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-weight: 400;
+  font-size: 17px;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+form .field input:focus ~ label,
+form .field input:valid ~ label {
+  top: 0px;
+  left: 10px;
+  color: #c25252;
+  font-size: 16px;
+  transform: translateY(-50%);
+}
+form .content {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+form .content .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input {
+  width: 20px;
+  height: 20px;
+  background: red;
+}
+form .content label {
+  color: #000;
+  user-select: none;
+  padding-left: 5px;
+}
+.container form .input-field input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container form .input-field input[type="submit"]:hover {
+  background: #f0f0f0; /* Ganti warna saat hover */
+}
+.container .signup-link {
+  margin-top: 5px;
+  text-align: center;
+}
+
